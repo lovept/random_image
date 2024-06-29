@@ -6,18 +6,19 @@
 把你的superbed api key填上
 
 ## 接口
+随机获取suberbed `wallpaper`相册中的图片
 ```
 http://localhost:8081/random
 ```
-随机获取suberbed `wallpaper`相册中的图片
 
+随机获取resources/zrn目录下的图片
 ```
 http://localhost:8081/zrn
 ```
-随机获取resources/zrn目录下的图片
 
 
+随机获取resources/ym目录下的图片
 ```
 http://localhost:8081/ym
 ```
-随机获取resources/ym目录下的图片
+
