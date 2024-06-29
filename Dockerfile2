@@ -1,0 +1,17 @@
+# 使用 OpenJDK 17 的基础镜像
+FROM openjdk:17-jdk
+
+# 创建应用程序目录
+WORKDIR /app
+
+# 从宿主机复制JAR文件到容器
+COPY lovept-0.0.1-SNAPSHOT.jar /app/lovept-0.0.1-SNAPSHOT.jar
+
+# 公开端口（假设你的应用程序在8080端口运行，如果不同，请修改）
+EXPOSE 8081
+
+# 运行JAR文件
+ENTRYPOINT ["java", "-jar", "/app/lovept-0.0.1-SNAPSHOT.jar"]
+
+# docker build -t random_image .
+# docker run -dp 8081:8081 --name random_image
